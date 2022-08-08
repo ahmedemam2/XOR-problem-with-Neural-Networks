@@ -21,7 +21,7 @@ class NN:
         self.biaso = np.random.uniform(-1, 1, (self.output_nodes))
         self.lr = 0.1
 
-    def Guess(self,inputs):
+    def Predict(self,inputs):
         htemp = np.dot((self.weights_ih), inputs)
 
         hiddens = np.add(htemp, self.biash)
